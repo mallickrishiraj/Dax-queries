@@ -24,3 +24,8 @@ Performing some basic dax queries
 2. This will give you the total profit made.
 3. You can even create a new column under the table view section by using the above formula along with a new column name.
 4. And the finally removing the aggregate funtion SUM for from the formula to get the individual data.(((Orders[Selling Price]) - (Orders[Product Cost])) * (Orders[Quantity]))
+5. You can also add the product name under the column for profit cost to see which product made the highest profit by selling.
+
+
+## using the if function to categorise the order size
+Order Category = IF(Orders[Quantity] < 30, "Small Order", "Big Order")
